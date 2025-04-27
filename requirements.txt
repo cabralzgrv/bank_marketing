@@ -1,0 +1,8 @@
+pandas
+numpy
+seaborn
+matplotlib
+scipy
+scikit-learn
+# Para instalar as dependências, execute o seguinte comando:
+# pip install -r requirements.txt
