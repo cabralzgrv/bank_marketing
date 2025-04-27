@@ -49,39 +49,39 @@ pip install -r requirements.txt
 
 ### Dicionário dos dados
 *bank client data*
-1. age (numeric)
+1. age: idade (numeric)
 
-2. job : type of job (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur","student","blue-collar","self-employed","retired","technician","services") 
+2. job : tipo de trabalho (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur","student","blue-collar","self-employed","retired","technician","services") 
 
-3. marital : marital status (categorical: "married","divorced","single"; note: "divorced" means divorced or widowed)
+3. marital : estado civil (categorical: "married","divorced","single"; note: "divorced" means divorced or widowed)
 
-4. education (categorical: "unknown","secondary","primary","tertiary")
+4. education: educação (categorical: "unknown","secondary","primary","tertiary")
 
-5. default: has credit in default? (binary: "yes","no")
+5. default: tem crédito em inadimplência? (binary: "yes","no")
 
-6. balance: average yearly balance, in euros (numeric) 
+6. balance: saldo médio anual, em euros (numeric) 
 
-7. housing: has housing loan? (binary: "yes","no")
+7. housing: tem empréstimo habitacional? (binary: "yes","no")
 
-8. loan: has personal loan? (binary: "yes","no") related with the last contact of the current campaign:
+8. loan: tem empréstimo pessoal? (binary: "yes","no") related with the last contact of the current campaign:
 
-9. contact: contact communication type (categorical: "unknown","telephone","cellular") 
+9. contact: tipo de comunicação de contato (categorical: "unknown","telephone","cellular") 
 
-10. day: last contact day of the month (numeric)
+10. day: último dia de contato do mês (numeric)
 
-11. month: last contact month of year (categorical: "jan", "feb", "mar", ..., "nov", "dec")
+11. month: último mês de contato do ano (categorical: "jan", "feb", "mar", ..., "nov", "dec")
 
-12. duration: last contact duration, in seconds (numeric)other attributes:
+12. duration: duração do último contato, em segundos (numeric)other attributes:
 
-13. campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
+13. campaign: número de contatos realizados durante esta campanha e para este cliente (numeric, includes last contact)
 
-14. pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)
+14. pdays: número de dias que passaram após o cliente ter sido contatado pela última vez de uma campanha anterior (numeric, -1 means client was not previously contacted)
 
-15. previous: number of contacts performed before this campaign and for this client (numeric)
+15. previous: número de contatos realizados antes desta campanha e para este cliente (numeric)
 
-16. poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
+16. poutcome: resultado da campanha de marketing anterior (categorical: "unknown","other","failure","success")
 
-17. y: has the client subscribed a term deposit? (binary: "yes","no") Output variable (desired target)
+17. y: o cliente subscreveu um depósito a prazo? (binary: "yes","no") Output variable (desired target)
 
 ### 1. Compreensão e Preparação dos Dados
 
