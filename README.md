@@ -34,7 +34,7 @@ bank-marketing-analysis/
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/cabralzgrv/bank-marketing-analysis.git
+git clone https://github.com/cabralzgrv/bank_marketing.git
 cd bank-marketing-analysis
 
 # Criar e ativar ambiente virtual (opcional)
@@ -151,6 +151,6 @@ Com base nas análises realizadas, identificamos os principais fatores que influ
 
 ## Autor
 
-Lucas Cabral Araújo
-EMAIL - lucascabralaraujo@outlook.com
-LINKEDIN - https://www.linkedin.com/in/lucascabralaraujo/
+- Lucas Cabral Araújo
+- lucascabralaraujo@outlook.com
+- https://www.linkedin.com/in/lucascabralaraujo/
