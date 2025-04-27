@@ -33,9 +33,9 @@ def histogram(dataframe, feature_name, bins=30, figsize=(10, 6)):
     median_value = dataframe[feature_name].median()
     
     # Adicionar a linha da mediana, moda e média
-    plt.axvline(x=mean_value, color='blue', linestyle='--', linewidth=1, label=f'Média: {mean_value:.2f}')
-    plt.axvline(x=mode_value, color='green', linestyle='', linewidth=1, label=f'Moda: {mode_value:.2f}')
-    plt.axvline(x=median_value, color='red', linestyle='', linewidth=1, label=f'Mediana: {median_value:.2f}')
+    plt.axvline(x=mean_value, color='blue', linestyle='--', linewidth=1, alpha=0.5,label=f'Média: {mean_value:.2f}')
+    plt.axvline(x=mode_value, color='green', linestyle='--', linewidth=1, alpha=0.5, label=f'Moda: {mode_value:.2f}')
+    plt.axvline(x=median_value, color='red', linestyle='--', linewidth=1, alpha=0.5, label=f'Mediana: {median_value:.2f}')
     
     # Configurar o título e as legendas
     plt.title(f'Distribuição de {feature_name}', color='black', fontsize=14)
@@ -51,11 +51,14 @@ def histogram(dataframe, feature_name, bins=30, figsize=(10, 6)):
     print(f"Estatísticas descritivas para {feature_name}:")
     print(f"  - Máximo: {dataframe[feature_name].max()}")
     print(f"  - Mínimo: {dataframe[feature_name].min()}")
+    print(f"  - Amplitude: {dataframe[feature_name].max() - dataframe[feature_name].min():.2f}")
     print(f"  - Média: {mean_value:.2f}")
     print(f"  - Mediana: {median_value:.2f}")
     print(f"  - Moda: {mode_value:.2f}")
     print(f"  - Variância: {dataframe[feature_name].var():.2f}")
     print(f"  - Desvio Padrão: {dataframe[feature_name].std():.2f}")
+    print(f"  - IIQ: {dataframe[feature_name].quantile(0.75) - dataframe[feature_name].quantile(0.25):.2f}")
+
     
     # Calcular e mostrar estatísticas descritivas relacionadas à normalidade
     skewness = stats.skew(dataframe[feature_name])
@@ -71,4 +74,5 @@ def histogram(dataframe, feature_name, bins=30, figsize=(10, 6)):
     print(f"  - Valores próximos de 0 indicam distribuição similar à normal")
     print(f"  - Valores > 0 indicam distribuição mais 'pontiaguda' que a normal")
     print(f"  - Valores < 0 indicam distribuição mais 'achatada' que a normal")
+    
     pass
